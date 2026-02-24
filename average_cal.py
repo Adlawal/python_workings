@@ -9,13 +9,29 @@
 
 
 sales=[120,450,800,50,900,300]
-for item in sales:
-  if item<=300:
-    print("low")
-  elif 300 < item <=700:
-    print("medium")
-  elif item > 700:
-    print("high")
+low =[]
+medium =[]
+high =[]
+
+for sale in sales:
+  if sale<=300:
+    print(f"{sale} is low")
+    low.append(sale)
+  elif 300 < sale <=700:
+    print(f"{sale} is medium")
+    medium.append(sale)
+  elif sale > 700:
+    print(f"{sale} is high")
+    high.append(sale)
+
+sum_low = sum(low)
+sum_medium=sum(medium)
+sum_high= sum(high)
+
+print (f"total sum of low sale is {sum_low} ")
+print (f"total sum of medium sale is {sum_medium} ")
+print (f"total sum of high sale is {sum_high} ")
+
 
 
 
